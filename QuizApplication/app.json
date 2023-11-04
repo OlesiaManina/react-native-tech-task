@@ -14,8 +14,24 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "react-native-appsflyer",
+        {}
+      ],
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ],
+      ["@react-native-firebase/app", 
+      ["@react-native-firebase/perf", 
+      "@react-native-firebase/crashlytics"]]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.quizapp"
     },
     "android": {
       "adaptiveIcon": {
